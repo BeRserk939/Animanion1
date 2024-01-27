@@ -1,0 +1,79 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #100E0F;
+}
+
+.wrapper {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.loader {
+	display: flex;
+	justify-content: space-between;
+}
+
+.loading {
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	background-color: #F56905;
+	margin: 0 10px;
+	animation: load 0.8s ease infinite, changeBC 0.09s ease infinite;
+}
+
+.one {
+   animation-delay: 0.2s;
+}
+
+.two {
+	 animation-delay: 0.3s;
+}
+
+.three {
+	 animation-delay: 0.4s;
+	}
+	
+.four {
+	 animation-delay: 0.5s;
+}
+
+
+
+@keyframes load {
+	40%{
+		height: 50px;
+		width: 50px;
+	}
+	20% {
+		height: 30px;
+		width: 30px;
+	}
+}
+
+@keyframes changeBC {
+	0% {
+		background-color: #F50508;
+	}
+	25% {
+		background-color: #000;
+	}
+	50% {
+		background-color: #F8D735;
+	}
+	75% {
+		background-color: #F835DF;
+	}
+	100% {
+		background-color: #66FF00;
+	}
+}
+
+
